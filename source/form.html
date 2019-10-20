@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Form</title>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<!-- <link rel="preload" href=".woff2" as="font" type="font/woff2" crossorigin> -->
+	<link rel="preload" href="css/style.min.css" as="style">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<div class="form-page">
+
+	<body>
+		<div class="center">
+			<header class="header">
+				<nav class="header_nav">
+					<ul class="header_list">
+						<li class="hader_item"><a class="header_link" href="index.html">Главная</a></li>
+						<li class="hader_item"><a class="header_link">Фото и видео</a></li>
+						<li class="hader_item"><a href="form.html" class="header_link">Форма отзыва</a></li>
+						<li class="hader_item"><a href="https://career.htmlacademy.ru/liga-heroes" class="header_link">HTML
+								Academy</a>
+						</li>
+					</ul>
+					<button class="header_nav-close"></button>
+				</nav>
+				<a class="header__logo">
+					<picture>
+						<img class="header__logo-img" src="" width="102" height="83" alt="Логотип сайта Sedona">
+					</picture>
+				</a>
+				<button class="header_menu"></button>
+			</header>
+			<main>
+				<section class="review">
+					<div class="intro">
+						<h1 class="title">Оставьте свой отзыв</h1>
+						<p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+						</p>
+					</div>
+					<div class="form">
+						<form action="" method="POST">
+							<fieldset>
+								<legend>Представьтесь:</legend>
+								<label>
+									Имя*:
+									<input type="text" placeholder="Петр" required>
+								</label>
+								<label>
+									Фамилия*:
+									<input type="text" placeholder="Иванов" required>
+								</label>
+								<label>
+									Отчество:
+									<input type="text" placeholder="Александрович">
+								</label>
+							</fieldset>
+							<fieldset>
+								<legend>Контактная информация:</legend>
+								<label>
+									Контактный телефон*:
+									<input type="tel" required>
+								</label>
+								<label>
+									Контактный телефон*:
+									<input type="email" required>
+								</label>
+							</fieldset>
+
+							<fieldset>
+								<legend>Ваше общее впечатление:</legend>
+								<label for="">
+									<input type="radio" name="impressions" id="good">
+									<span></span>
+									Скорее положительное
+								</label>
+								<label for="">
+									<input type="radio" name="impressions" id="bad">
+									<span></span>
+									Скорее отрицательное
+								</label>
+								<label for="">
+									<input type="radio" name="impressions" id="none">
+									<span></span>
+									Затрудняюсь ответить
+								</label>
+							</fieldset>
+
+							<fieldset>
+								<legend>Посещенные достопримечательности:</legend>
+								<label for="">
+									<input type="checkbox" name="">
+									<span></span>
+									Мост Дьявола
+								</label>
+								<label for="">
+									<input type="checkbox" name="">
+									<span></span>
+									Гора-Колокол
+								</label>
+								<label for="">
+									<input type="checkbox" name="">
+									<span></span>
+									Слайд-парк
+								</label>
+								<label for="">
+									<input type="checkbox" name="">
+									<span></span>
+									Красные скалы
+								</label>
+							</fieldset>
+
+							<fieldset>
+								<legend>Опишите свои эмоции:</legend>
+								<label class="visually-hidden" for="comment"></label>
+								<textarea name="comment" id="comment" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+							</fieldset>
+							<button type="submit"></button>
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<a class="footer__visit"></a>
+				<section>
+					<h2 class="visually-hidden">Мы в соц. сетях</h2>
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link">
+								<svg></svg>
+								<span class="visually-hidden"></span>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link">
+								<svg></svg>
+								<span class="visually-hidden"></span>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link">
+								<svg></svg>
+								<span class="visually-hidden"></span>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<div class="footer__academy">
+					<a href="#" class="footer__academy-link"></a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</div>
+
+</html>
