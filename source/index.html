@@ -12,6 +12,9 @@
 </head>
 <div class="index-page">
 <body>
+	<div style="display: none">
+		<include src="source/img/sprite.svg"></include>
+	</div>
 	
 		<div class="center">
 			<header class="header">
@@ -24,104 +27,120 @@
 					</ul>
 					<button class="header__nav-close"></button>
 				</nav>
+				<div class="header__logo-container">
 				<a class="header__logo">
 					<picture>
 						<img class="header__logo-img" src="img/logotype-mobile.png" width="102" height="83" alt="Логотип сайта Sedona">
 					</picture>
 				</a>
 				<button class="header__menu"></button>
+				</div>
 			</header>
 			
 			<main class="main">
 				<section class="reasons">
-					<div class="intro">
+					<div class="reasons__welcome"></div>
+					<div class="intro intro--index">
 						<h1 class="title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
 						<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 					</div>
 					<ol class="reasons__list">
 					<li class="reasons__item reasons__item--big">
-						<div class="reasons__info">
+						<div class="reasons__info reasons__info--pad">
 							<h3 class="reasons__title reasons__title--sec">Настоящий городок</h3>
-							<span class="reasons__title reasons__title--sec">— №1 —</span>
-							<p class="reasons__title reasons__title--sec">Седона не атракцион для туристов, там течет своя жизнь</p>
+							<span class="reasons__title reasons__num">— №1 —</span>
+							<p class="reasons__text reasons__title--sec">Седона не атракцион для туристов, там течет своя жизнь</p>
 						</div>
-						<img class="reasons__img" src="" width="" height="" alt="Фото города Седона">
+						<img class="reasons__img" src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седона">
 						<ul class="reasons__list reasons__list--advantage">
-							<li class="reasons__item">
-								<h4 class="reasons__title rtitle rtitle--home">Жилье</h4>
+							<li class="reasons__sub-item">
+								<h4 class="reasons__title reasons__title--home">Жилье</h4>
 								<p class="reasons__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 							</li>
-							<li class="reasons__item">
-								<h4 class="reasons__title rtitle rtitle--present">Сувениры</h4>
-								<p class="reasons__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+							<li class="reasons__sub-item">
+								<h4 class="reasons__title reasons__title--present">Сувениры</h4>
+								<p class="reasons__text">Не только китайского, но и местного производства!</p>
 							</li>
-							<li class="reasons__item">
-								<h4 class="reasons__title rtitle rtitle--food">Еда</h4>
+							<li class="reasons__sub-item">
+								<h4 class="reasons__title reasons__title--food">Еда</h4>
 								<p class="reasons__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
 							</li>
 						</ul>
 					</li>
 					<li class="reasons__item reasons__item--big">
 						<div class="reasons__info">
-							<h3 class="reasons__title reasons__title--sec">Там есть мост дьявола</h3>
-							<span class="reasons__title reasons__title--sec">— №2 —</span>
-							<p class="reasons__title reasons__title--sec">Да, по нему можно пойти! Если вы осмелитесь, конечно.</p>
+							<h3 class="reasons__title">Там есть мост дьявола</h3>
+							<span class="reasons__title reasons__num">— №2 —</span>
+							<p class="reasons__text">Да, по нему можно пойти! Если вы осмелитесь, конечно.</p>
 						</div>
-						<img class="reasons__img" src="" width="" height="" alt="Фото моста дьявола">
+						<img class="reasons__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото Моста Дьявола">
 					</li>
-					<li class="reasons__item">
-						<h3 class="reasons__title reasons__title--sec">Небольшая площадь</h3>
-						<span class="reasons__title reasons__title--sec">— №3 —</span>
-						<p class="reasons__title reasons__title--sec">Все интересные места находятся очень близко</p>
+					<li class="reasons__item reasons__item--color">
+						<h3 class="reasons__title">Небольшая площадь</h3>
+						<span class="reasons__title  reasons__num">— №3 —</span>
+						<p class="reasons__text">Все интересные места находятся очень близко</p>
 					</li>
-					<li class="reasons__item">
+					<li class="reasons__item reasons__item--color">
 						<h3 class="reasons__title reasons__title--sec">Красивая дорога</h3>
-						<span class="reasons__title reasons__title--sec">— №4 —</span>
-						<p class="reasons__title reasons__title--sec">Большинство едет в гранд каньон и толпится там</p>
+						<span class="reasons__title reasons__num">— №4 —</span>
+						<p class="reasons__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 					</li>
-					<li class="reasons__item">
+					<li class="reasons__item reasons__item--color">
 						<h3 class="reasons__title reasons__title--sec">Мало туристов</h3>
-						<span class="reasons__title reasons__title--sec">— №5 —</span>
-						<p class="reasons__title reasons__title--sec">Большинство едет в гранд каньон и толпится там</p>
+						<span class="reasons__title reasons__num">— №5 —</span>
+						<p class="reasons__text">Большинство едет в гранд каньон и толпится там</p>
 					</li>
 				</ol>			
 				</section>
 				<section class="search">
-					<h2 class="visually-hidden">Поиск гостиницы</h2>
-					<b class="search__lead">Заинтересовались?</b>
-					<p class="search__text"></p>
-					<button class="search__button">Найти гостиницу</button>
+					<div class="search__container">
+						<h2 class="visually-hidden">Поиск гостиницы</h2>
+						<b class="search__lead">Заинтересовались?</b>
+						<p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+						<button class="search__button">Найти гостиницу</button>
+					</div>
 					<div class="map"></div>
 				</section>
 			</main>
 
 			<footer class="footer">
-				<a class="footer__visit"></a>
+				<a class="footer__visit">#visitsedona</a>
 				<section>
 					<h2 class="visually-hidden">Мы в соц. сетях</h2>
 					<ul class="footer__social-list">
 						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<svg></svg>
-								<span class="visually-hidden"></span>
+							<a href="#" class="footer__social-link" aria-label="Мы в Twitter">
+								<svg width="18" height="14">
+									<use xlink:href="#icon-twitter"></use>
+								</svg>
+								Мы в Twitter
 							</a>
 						</li>
 						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<svg></svg>
-								<span class="visually-hidden"></span>
+							<a href="#" class="footer__social-link" aria-label="Мы в Facebook">
+								<svg width="9" height="18">
+									<use xlink:href="#icon-fb"></use>
+								</svg>
+								Мы в Facebook
 							</a>
 						</li>
 						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<svg></svg>
-								<span class="visually-hidden"></span>
+							<a href="#" class="footer__social-link" aria-label="Мы в YouTube">
+								<svg width="20" height="14">
+									<use xlink:href="#icon-youtube"></use>
+								</svg>
+								Мы в YouTube
 							</a>
 						</li>
 					</ul>
 				</section>
 				<div class="footer__academy">
-					<a href="#" class="footer__academy-link"></a>
+					<a href="#" class="footer__academy-link">
+						Разработано
+						<svg width="30" height="37">
+							<use xlink:href="#icon-htmlacademy"></use>
+						</svg>
+					</a>
 				</div>
 			</footer>
 		</div>	

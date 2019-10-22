@@ -1,0 +1,93 @@
+.photos {
+
+}
+
+.photos__welcome {
+	min-height: 158px;
+	background-image: url(../../img/sedona-mobile.png),
+		url(../../img/index-back-mobile.jpg);
+	background-repeat: no-repeat;
+	background-position: center, bottom;
+}
+
+.photos__list ul {
+	@include list-reset;
+}
+
+.photos__list li {
+	padding: 20px 20px;
+	font-family: 'PT Sans', 'Arial';
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	color: #000000;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.photos__list ul li:first-child {
+	border-top: 1px solid #d6d6d6;
+}
+
+.photos__list img {
+	margin-bottom: 5px;
+}
+
+.photos__list h3 {
+	margin: 0;
+	padding: 0;	
+	font-size: inherit;
+}
+
+.photos__list h3 + p {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	font-size: inherit;
+	font-weight: 400;
+	text-transform: none;
+	color: #333333;
+}
+
+.photos__list p + span {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	padding-left: 35px;
+	font-size: inherit;
+	text-transform: none;
+}
+
+.photos__list p + span::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 23px;
+	height: 21px;
+	background-image: url(../../img/like-icon.png);
+	background-repeat: no-repeat;
+}
+
+.photos__container {
+	padding: 25px 40px;
+	text-align: center;
+}
+
+.photos__lead {
+	display: block;
+	margin: 0;	
+	margin-bottom: 15px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.photos__video p {
+	margin: 0;
+	padding: 0;
+	line-height: 24px;
+}
