@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-	<!-- <link rel="preload" href=".woff2" as="font" type="font/woff2" crossorigin> -->
+	<link rel="preload" href="fonts/pt-sans-v11-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="css/style.min.css" as="style">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -40,15 +40,16 @@
 			</header>
 			<main>
 				<section class="review">
+					<div class="welcome"></div>
 					<div class="intro">
 						<h1 class="title">Оставьте свой отзыв</h1>
 						<p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
 						</p>
 					</div>
-					<div class="form">
+					<div class="review__form">
 						<form action="" method="POST">
 							<fieldset>
-								<legend>Представьтесь:</legend>
+								<h3>Представьтесь:</h3>
 								<label>
 									Имя*:
 									<input type="text" placeholder="Петр" required>
@@ -63,30 +64,30 @@
 								</label>
 							</fieldset>
 							<fieldset>
-								<legend>Контактная информация:</legend>
+								<h3>Контактная информация:</h3>
 								<label>
 									Контактный телефон*:
-									<input type="tel" required>
+									<input type="tel" placeholder="Введите телефон" required>
 								</label>
 								<label>
 									Контактный телефон*:
-									<input type="email" required>
+									<input type="email" placeholder="Введите e-mail" required>
 								</label>
 							</fieldset>
 
 							<fieldset>
-								<legend>Ваше общее впечатление:</legend>
-								<label for="">
-									<input type="radio" name="impressions" id="good">
+								<h3>Ваше общее впечатление:</h3>
+								<label>
+									<input type="radio" name="impressions" id="good" checked>
 									<span></span>
 									Скорее положительное
 								</label>
-								<label for="">
+								<label>
 									<input type="radio" name="impressions" id="bad">
 									<span></span>
 									Скорее отрицательное
 								</label>
-								<label for="">
+								<label>
 									<input type="radio" name="impressions" id="none">
 									<span></span>
 									Затрудняюсь ответить
@@ -94,35 +95,35 @@
 							</fieldset>
 
 							<fieldset>
-								<legend>Посещенные достопримечательности:</legend>
-								<label for="">
-									<input type="checkbox" name="">
+								<h3>Посещенные достопримечательности:</h3>
+								<label>
+									<input type="checkbox" name="Мост Дьявола">
 									<span></span>
 									Мост Дьявола
 								</label>
-								<label for="">
-									<input type="checkbox" name="">
+								<label>
+									<input type="checkbox" name="Гора-Колокол">
 									<span></span>
 									Гора-Колокол
 								</label>
-								<label for="">
-									<input type="checkbox" name="">
+								<label>
+									<input type="checkbox" name="Слайд-парк">
 									<span></span>
 									Слайд-парк
 								</label>
-								<label for="">
-									<input type="checkbox" name="">
+								<label>
+									<input type="checkbox" name="Красные скалы" checked>
 									<span></span>
 									Красные скалы
 								</label>
 							</fieldset>
 
 							<fieldset>
-								<legend>Опишите свои эмоции:</legend>
+								<h3>Опишите свои эмоции:</h3>
 								<label class="visually-hidden" for="comment"></label>
-								<textarea name="comment" id="comment" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+								<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
 							</fieldset>
-							<button type="submit"></button>
+							<button type="submit">Отправить отзыв</button>
 						</form>
 					</div>
 				</section>

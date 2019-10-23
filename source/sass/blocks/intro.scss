@@ -1,8 +1,9 @@
 .intro	{
 	position: relative;
 	margin: 0;
-	padding: 0 24px;
-	padding-bottom: 33px;
+	padding: 0 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
 	text-align: center;
 }
 
@@ -11,19 +12,9 @@
 	padding: 0;
 }
 
-.intro::before {
-	content: "";
-	position: absolute;
-	top: -35px;
-	right: 0;
-	height: 0;
-	border: 160px solid #ffffff;
-	border-top: 20px solid transparent;
-	z-index: -1;
-}
-
 .intro--index {
-	z-index: 1;
+	padding-left: 24px;
+	padding-right: 24px;
 }
 
 .intro--index::after {
@@ -35,3 +26,4 @@
 	border: 160px solid transparent;
 	border-top: 20px solid #ffffff;
 }
+
