@@ -1,5 +1,5 @@
 .footer {
-	padding: 20px 83px 20px 83px;
+	padding: 20px 80px;
 	text-align: center;
 }
 
@@ -38,4 +38,23 @@
 	padding: 0 13px;
 	line-height: 26px;
 	color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+	.footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 43px;
+		padding-bottom: 25px;
+	}
+
+	.footer__social-list {
+		margin-bottom: 0;
+	}
+
+	.footer__visit {
+		margin-bottom: 0;
+	}
+
 }

@@ -1,11 +1,13 @@
 .welcome {
 	position: relative;
-	min-height: 158px;
+	height: 158px;
 	background-image: url(../../img/sedona-mobile.png),
 		url(../../img/index-back-mobile.jpg);
 	background-repeat: no-repeat;
 	background-position: center, bottom;
+	background-size: auto, cover;
 	z-index: -1;
+
 }
 
 .welcome::before {
@@ -16,4 +18,37 @@
 	height: 0;
 	border: 160px solid #ffffff;
 	border-top: 20px solid transparent;
+}
+
+.welcome--index {
+	height: 389px;
+	background-image: url(../../img/text-index-desktop.png),
+		url(../../img/index-back-mobile.jpg);
+	background-size: 281px 214px, cover;
+}
+
+@media (min-width: $tablet-width) {
+	.welcome {
+		height: 290px;
+	}
+
+	.welcome::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 57px;
+		border: none;
+		border-top: none;
+	}
+
+	.welcome--index {
+		height: 518px;
+		background-image: url(../../img/text-index-desktop.png),
+			url(../../img/index-back-desktop.jpg);
+		background-size: auto;
+	}
+
+
 }
