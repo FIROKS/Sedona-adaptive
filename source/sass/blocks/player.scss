@@ -1,0 +1,52 @@
+.player {
+
+}
+
+.player__img {
+	display: block;
+}
+
+.player__duration {
+
+}
+
+.player__controls {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 280px;
+	height: 66px;
+	margin: 0 auto;
+	padding: 0 23px;
+	background-color: #f2f2f2;
+}
+
+.player__controls::before {
+	content: "";
+	position: absolute;
+	top: -45px;
+	left: 0;
+	width: 280px;
+	height: 45px;
+	background-color: #000000;
+	opacity: 0.5;
+}
+
+.player__controls::after {
+	content: "";
+	position: absolute;
+	top: -23px;
+	left: 22px;
+	width: 235px;
+	height: 3px;
+	background-color: #ffffff;
+	opacity: 0.3;
+}
+
+.player__controls img:nth-child(2) {
+	margin-left: auto;
+}
+
+.player__controls img:nth-child(3) {
+	margin-left: 31px;
+}

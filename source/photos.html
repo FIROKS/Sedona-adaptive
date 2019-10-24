@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<title>Photos</title>
 		<meta charset="UTF-8">
@@ -12,54 +12,69 @@
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 <div class="photo-page">
-	<body>		
-			<div class="center">
-				<header class="header">
-					<nav class="header_nav">
-						<ul class="header_list">
-							<li class="hader_item"><a class="header_link" href="index.html">Главная</a></li>
-							<li class="hader_item"><a class="header_link">Фото и видео</a></li>
-							<li class="hader_item"><a href="form.html" class="header_link">Форма отзыва</a></li>
-							<li class="hader_item"><a href="https://career.htmlacademy.ru/liga-heroes" class="header_link">HTML Academy</a>
+	<body>
+		<div style="display: none">
+			<include src="source/img/sprite.svg"></include>
+		</div>	
+		<div class="center">
+			<header class="header">
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<a class="header__link">Главная</a>
+						</li>
+						<li class="header__item">
+							<a href="photo.html" class="header__link">Фото и видео</a>
+						</li>
+						<li class="header__item">
+							<a href="form.html" class="header__link">Форма отзыва</a>
+						</li>
+						<li class="header__item">
+							<a href="https://career.htmlacademy.ru/liga-heroes" class="header__link">HTML
+								Academy</a>
 							</li>
-						</ul>
-						<button class="header_nav-close"></button>
-					</nav>
+					</ul>
+					<button class="header__nav-close"></button>
+				</nav>
+				<div class="header__logo-container">
 					<a class="header__logo">
 						<picture>
-							<img class="header__logo-img" src="" width="102" height="83" alt="Логотип сайта Sedona">
+							<img class="header__logo-img" src="img/logotype-mobile.png" width="102" height="83"
+								alt="Логотип сайта Sedona">
 						</picture>
 					</a>
-					<button class="header_menu"></button>
-				</header>
+					<button class="header__menu"></button>
+				</div>
+			</header>
 			<main>
 				<section class="photos">
-					<div class="photos__intro">
+					<div class="welcome"></div>
+					<div class="intro">
 						<h1 class="title">Фото и видео</h1>
-						<p class="photos__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+						<p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 					</div>
 					<div class="photos__list">
 						<ul>
 							<li>
-								<img src="img/photo-1-mobile.png" alt="Неродные просторы">
+								<img src="img/photo-1-mobile.png" width="280" height="280" alt="Неродные просторы">
 								<h3>Неродные просторы</h3>
 								<p>Автор фото: Борис</p>
 								<span>1350</span>
 							</li>
 							<li>
-								<img src="img/photo-2-mobile.png" alt="Местная растительность">
+								<img src="img/photo-2-mobile.png" width="280" height="280" alt="Местная растительность">
 								<h3>Местная растительность</h3>
 								<p>Автор фото: Сергей</p>
 								<span>143</span>
 							</li>
 							<li>
-								<img src="img/photo-3-mobile.png" alt="Дорога на север">
+								<img src="img/photo-3-mobile.png" width="280" height="280" alt="Дорога на север">
 								<h3>Дорога на север</h3>
 								<p>Автор фото: Петр</p>
 								<span>96</span>
 							</li>
 							<li>
-								<img src="img/photo-4-mobile.jpg" alt="Мост дьявола">
+								<img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
 								<h3>Мост дьявола</h3>
 								<p>Автор фото: Антон</p>
 								<span>254</span>
@@ -67,8 +82,10 @@
 						</ul>
 					</div>
 					<div class="photos__video">
-						<b class="photos__lead"></b>
-						<p></p>
+						<div class="photos__container">
+							<b class="photos__lead">Все еще сомневаетесь?</b>
+							<p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+						</div>
 						<div class="player">
 							<img class="player__img" src="img/video-mobile.jpg" alt="Элемент управления" role="presentation" width="319" height="201">
 							<div class="player__duration"></div>
@@ -82,34 +99,45 @@
 				</section>
 			</main>
 			<footer class="footer">
-				<a class="footer__visit"></a>
-				<section>
-					<h2 class="visually-hidden">Мы в соц. сетях</h2>
-					<ul class="footer__social-list">
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<svg></svg>
-								<span class="visually-hidden"></span>
-							</a>
-						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<svg></svg>
-								<span class="visually-hidden"></span>
-							</a>
-						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link">
-								<svg></svg>
-								<span class="visually-hidden"></span>
-							</a>
-						</li>
-					</ul>
-				</section>
-				<div class="footer__academy">
-					<a href="#" class="footer__academy-link"></a>
-				</div>
-			</footer>
+					<a class="footer__visit">#visitsedona</a>
+					<section>
+						<h2 class="visually-hidden">Мы в соц. сетях</h2>
+						<ul class="footer__social-list">
+							<li class="footer__social-item">
+								<a href="#" class="footer__social-link" aria-label="Мы в Twitter">
+									<svg width="18" height="14">
+										<use xlink:href="#icon-twitter"></use>
+									</svg>
+									Мы в Twitter
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a href="#" class="footer__social-link" aria-label="Мы в Facebook">
+									<svg width="9" height="18">
+										<use xlink:href="#icon-fb"></use>
+									</svg>
+									Мы в Facebook
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a href="#" class="footer__social-link" aria-label="Мы в YouTube">
+									<svg width="20" height="14">
+										<use xlink:href="#icon-youtube"></use>
+									</svg>
+									Мы в YouTube
+								</a>
+							</li>
+						</ul>
+					</section>
+					<div class="footer__academy">
+						<a href="#" class="footer__academy-link">
+							Разработано
+							<svg width="30" height="37">
+								<use xlink:href="#icon-htmlacademy"></use>
+							</svg>
+						</a>
+					</div>
+				</footer>
 		</div>
 	</body>
 </div>

@@ -1,0 +1,195 @@
+.review__welcome {
+	min-height: 158px;
+	background-image: url(../../img/sedona-mobile.png),
+		url(../../img/index-back-mobile.jpg);
+	background-repeat: no-repeat;
+	background-position: center, bottom;
+}
+
+.review__form form {
+	padding: 20px 20px;
+	padding-top: 0;
+}
+
+.review__form fieldset {
+	margin: 0;	
+	padding: 0;
+	border: none;
+	border-top: 1px solid #d6d6d6;
+}
+
+
+.review__form h3 {
+	margin: 0;
+	margin-bottom: 20px;
+	margin-top: 15px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 26px;
+  font-weight: 700;
+  letter-spacing: normal;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.review__form label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+	letter-spacing: normal;
+	text-transform: none;
+  color: #000000;
+}
+
+.review__form fieldset:nth-child(1) label,
+.review__form fieldset:nth-child(2) label {	
+	justify-content: space-between;
+	font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+	letter-spacing: normal;
+	text-transform: uppercase;
+}
+
+.review__form input[type="text"],
+.review__form input[type="email"],
+.review__form input[type="tel"],
+.review__form textarea {
+  font-family: 'PT Sans', 'Arial';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+	letter-spacing: normal;
+	text-transform: none;
+  color: #000000;
+}
+
+.review__form input {
+	flex-grow: 1;
+	width: 100%;
+	margin: 0;
+	padding: 0 20px;
+	margin-left: 10px;
+	height: 50px;
+	background-color: #f2f2f2;
+	border: none;
+	overflow: hidden;
+}
+
+.review__form fieldset:nth-child(2) label {
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+.review__form fieldset:nth-child(2) label::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50px;
+	height: 50px;
+	background-color: #e6e6e6;
+}
+
+.review__form fieldset:nth-child(2) label:nth-of-type(1)::after {
+	background-image: url(../../img/icon-phone.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.review__form fieldset:nth-child(2) label:nth-of-type(2)::after {
+	background-image: url(../../img/icon-mail.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.review__form fieldset:nth-child(2) input {
+	display: block;
+	margin: 5px 0 15px -10px;
+	padding-right: 25px;
+}
+
+.review__form fieldset:nth-child(2) input:last-child {
+	margin-bottom: 20px;
+}
+
+.review__form input[type="checkbox"],
+.review__form input[type="radio"] {
+	@include visually-hidden
+}
+
+.review__form input[type="radio"] + span {
+	display: inline-block;
+	position: relative;
+	width: 46px;
+	height: 46px;
+	margin-right: 27px;
+	background-color: #f2f2f2;
+	border-radius: 50%;
+}
+
+.review__form input[type="radio"]:checked + span::before {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 16px;
+	height: 16px;
+	background-color: #333333;
+	border-radius: 50%;
+}
+
+.review__form input[type="checkbox"] + span {
+	display: inline-block;
+	position: relative;
+	width: 46px;
+	height: 46px;
+	margin-right: 27px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+}
+
+.review__form input[type="checkbox"]:checked + span::before {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	width: 24px;
+	height: 16px;
+	background-image: url(../../img/icon-tick.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.review__form textarea {
+	width: 279px;
+	height: 160px;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 15px;
+	background-color: #f2f2f2;
+	border: none;
+	resize: none;
+}
+
+.review__form button {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 15px 15px;
+	font-family: 'PT Sans', 'Arial';
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: $main-color;
+	border: none;
+}
+
