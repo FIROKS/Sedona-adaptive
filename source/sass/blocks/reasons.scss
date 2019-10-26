@@ -145,6 +145,10 @@
     padding: 25px 45px;
 	}
 
+	.reasons__item-container--reverse .reasons__info {
+		order: 1;
+	}
+
 	.reasons__info {
 		width: 256px;
 		padding: 40px 15px;

@@ -1,10 +1,10 @@
 .center {
-	width: 320px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
 	.center {
-		width: $tablet-width;
+		padding: 0 60px;
 	}
 }
