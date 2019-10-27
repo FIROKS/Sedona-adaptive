@@ -39,20 +39,25 @@
 			
 			<main class="main">
 				<section class="reasons">
-					<div class="welcome"></div>
+					<div class="welcome welcome--index"></div>
 					<div class="intro intro--index">
 						<h1 class="title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
 						<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 					</div>
 					<ol class="reasons__list">
 					<li class="reasons__item reasons__item--big">
+						<div class="reasons__item-container">
 						<div class="reasons__info reasons__info--pad">
 							<h3 class="reasons__title reasons__title--sec">Настоящий городок</h3>
 							<span class="reasons__title reasons__num">— №1 —</span>
 							<p class="reasons__text reasons__title--sec">Седона не атракцион для туристов, там течет своя жизнь</p>
 						</div>
-						<img class="reasons__img" src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седона">
-						<ul class="reasons__list reasons__list--advantage">
+						<picture>
+							<source media="(min-width: 768px)" srcset="img/photo-city-desktop@1x.jpg">
+							<img class="reasons__img" src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седона">
+					</picture>
+					</div>
+						<ul class="reasons__advantage">
 							<li class="reasons__sub-item">
 								<h4 class="reasons__title reasons__title--home">Жилье</h4>
 								<p class="reasons__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -68,12 +73,17 @@
 						</ul>
 					</li>
 					<li class="reasons__item reasons__item--big">
+							<div class="reasons__item-container reasons__item-container--reverse">
 						<div class="reasons__info">
 							<h3 class="reasons__title">Там есть мост дьявола</h3>
 							<span class="reasons__title reasons__num">— №2 —</span>
 							<p class="reasons__text">Да, по нему можно пойти! Если вы осмелитесь, конечно.</p>
 						</div>
-						<img class="reasons__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото Моста Дьявола">
+						<picture>
+							<source media="(min-width: 768px)" srcset="img/photo-bridge-desktop@1x.jpg">
+							<img class="reasons__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото Моста Дьявола">
+						</picture>
+					</div>
 					</li>
 					<li class="reasons__item reasons__item--color">
 						<h3 class="reasons__title">Небольшая площадь</h3>
@@ -96,7 +106,7 @@
 					<div class="search__container">
 						<h2 class="visually-hidden">Поиск гостиницы</h2>
 						<b class="search__lead">Заинтересовались?</b>
-						<p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+						<p class="search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 						<button class="search__button">Найти гостиницу</button>
 					</div>
 					<div class="map"></div>

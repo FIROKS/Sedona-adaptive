@@ -1,19 +1,52 @@
 .welcome {
 	position: relative;
-	min-height: 158px;
+	height: 158px;
 	background-image: url(../../img/sedona-mobile.png),
 		url(../../img/index-back-mobile.jpg);
 	background-repeat: no-repeat;
 	background-position: center, bottom;
-	z-index: -1;
+	background-size: auto, cover;
+	// z-index: -1;
+
 }
 
 .welcome::before {
 	content: "";
 	position: absolute;
-	bottom: -160px;
+	bottom: 0;
 	right: 0;
-	height: 0;
-	border: 160px solid #ffffff;
-	border-top: 20px solid transparent;
+	left: 0;
+	height: 55px;
+	background-image: url(../../img/polygon.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.welcome--index {
+	height: 389px;
+	background-image: url(../../img/text-index-desktop.png),
+		url(../../img/index-back-mobile.jpg);
+	background-size: 281px 214px, cover;
+}
+
+@media (min-width: $tablet-width) {
+	.welcome {
+		height: 290px;
+		background-image: url(../../img/sedona-text-desktop.png),
+			url(../../img/index-back-desktop.jpg);
+		background-position: center, bottom;
+		background-size: auto, auto;
+	}
+
+	.welcome--index {
+		height: 518px;
+		background-image: url(../../img/text-index-desktop.png),
+			url(../../img/index-back-desktop.jpg);
+		background-size: auto, cover;
+		background-position: center, top;
+	}
+
+
 }

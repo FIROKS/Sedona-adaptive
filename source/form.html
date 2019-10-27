@@ -77,54 +77,81 @@
 
 							<fieldset>
 								<h3>Ваше общее впечатление:</h3>
-								<label>
-									<input type="radio" name="impressions" id="good" checked>
-									<span></span>
-									Скорее положительное
-								</label>
+								<ul>
+									<li>	<label>
+										<input type="radio" name="impressions" id="good" checked>
+										<span></span>
+										Скорее положительное
+									</label>
+								</li>
+								<li>
 								<label>
 									<input type="radio" name="impressions" id="bad">
 									<span></span>
 									Скорее отрицательное
 								</label>
+							</li>
+						
+								<li>
 								<label>
 									<input type="radio" name="impressions" id="none">
 									<span></span>
 									Затрудняюсь ответить
 								</label>
+							</li>
+							</ul>
 							</fieldset>
 
 							<fieldset>
 								<h3>Посещенные достопримечательности:</h3>
+								<ul>
+									<li>
 								<label>
 									<input type="checkbox" name="Мост Дьявола">
 									<span></span>
 									Мост Дьявола
 								</label>
+							</li>
+								
+								<li>
 								<label>
 									<input type="checkbox" name="Гора-Колокол">
 									<span></span>
 									Гора-Колокол
 								</label>
+							</li>
+								<li>
 								<label>
 									<input type="checkbox" name="Слайд-парк">
 									<span></span>
 									Слайд-парк
 								</label>
+							</li>
+							<li>
 								<label>
 									<input type="checkbox" name="Красные скалы" checked>
 									<span></span>
 									Красные скалы
 								</label>
+							</li>
+						</ul>
 							</fieldset>
 
 							<fieldset>
 								<h3>Опишите свои эмоции:</h3>
 								<label class="visually-hidden" for="comment"></label>
-								<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+								<textarea name="comment" id="comment" placeholder="Опишите подробно все свои восторги"></textarea>
 							</fieldset>
 							<button type="submit">Отправить отзыв</button>
+							<p>* — обязательные поля</p>
 						</form>
+						<div class="review__modal-success">
+							<div class="review__modal-cont">
+								<p class="title">Ваш отзыв отправлен!</p>
+								<p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+								<button class="button" type="button">Закрыть окно</button>
+							</div>
+						</div>
 					</div>
 				</section>
 			</main>
