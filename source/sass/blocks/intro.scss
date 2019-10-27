@@ -29,11 +29,20 @@
 
 @media (min-width: $tablet-width) {
 	.intro {
-		padding: 30px 139px;
+		width: 440px;
+		margin: 0 auto;
+		padding: 30px 0;
 	}
 
 	.intro--index::after {
 		display: none;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.intro {
+		width: 490px;
+		// padding: 30px 0;
 	}
 }
 

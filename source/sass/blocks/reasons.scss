@@ -124,6 +124,10 @@
 		min-height: 256px;
 	}
 
+	.reasons__item--big {
+		width: 100%;
+	}
+
 	.reasons__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -156,6 +160,11 @@
 
 	.reasons__info .reasons__title {
 		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.reasons__info .reasons__text {
+		text-align: center;
 	}
 
 	.reasons__advantage {
@@ -163,14 +172,14 @@
 	}
 
 	.reasons__sub-item {
-		width: 256px;
+		width: 33.333%;
 		min-height: 330px;
-		padding: 0 40px;
+		padding: 0 25px;
 		text-align: center;
 	}
 
 	.reasons__sub-item:first-child {
-		padding: 0 40px;
+		padding: 0 25px;
 	}
 
 	.reasons__sub-item .reasons__title {
@@ -205,4 +214,37 @@
 	}
 
 
+}
+
+@media (min-width: $desktop-width) {
+	.reasons__info {
+		width: 400px;
+		max-width: 400px;
+		padding: 40px 70px;
+	}
+
+	.reasons__info .reasons__title{
+		padding: 0 60px;	
+	} 
+
+	.reasons__sub-item {
+		width: 33.333%;
+		// min-height: 330px;
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	.reasons__sub-item:first-child {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	.reasons__item--color {
+		min-height: 256px;
+		padding: 50px;
+	}
+
+	.reasons__item--color h3{
+		padding: 0 85px;
+	}
 }

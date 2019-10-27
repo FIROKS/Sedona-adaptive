@@ -56,5 +56,11 @@
 	.footer__visit {
 		margin-bottom: 0;
 	}
+}
 
+@media (min-width: $desktop-width) {
+	.footer {
+		padding: 20px 100px;
+		padding-bottom: 30px;
+	}
 }

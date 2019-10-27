@@ -56,3 +56,9 @@
 		width: 460px;
 	}
 }
+
+@media (min-width: $desktop-width) {
+	.search__lead {
+		margin-bottom: 25px;
+	}
+}
