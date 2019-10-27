@@ -22,6 +22,10 @@
 	border-top: 1px solid #d6d6d6;
 }
 
+.review__form ul {
+	@include list-reset;
+}
+
 
 .review__form h3 {
 	margin: 0;
@@ -224,3 +228,136 @@
 .review__modal-success--show {
 	display: block;
 }
+
+.review__form p:last-of-type {
+	display: none;
+}
+
+@media (min-width: $tablet-width) {
+	.review__form form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.review__form fieldset {
+		border: none;
+	}
+	
+	.review__form fieldset:nth-child(1),
+	.review__form fieldset:nth-child(3) {
+		width: 50%;
+	}
+
+	.review__form fieldset:nth-child(1) label:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.review__form fieldset:nth-child(3) li:last-child label {
+		margin-bottom: 0;
+	}
+
+	.review__form fieldset:nth-child(1) h3,
+	.review__form fieldset:nth-child(3) h3 {
+		text-align: left;
+		margin-bottom: 40px;
+		margin-top: 0;
+	}
+
+	.review__form fieldset:nth-child(1) {
+		padding-left: 50px;
+		order: 1;
+	}
+	
+	.review__form fieldset:nth-child(3)::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 1px;
+		height: 100%;
+		background-color: #dbdbdb;
+	}
+
+	.review__form fieldset:nth-child(2) {
+		width: 100%;
+		margin-top: 30px;
+		order: 2;
+	}
+
+	.review__form fieldset:nth-child(3) {
+		padding-right: 50px;
+		position: relative;
+	}
+
+	.review__form fieldset:nth-child(4) {
+		width: 100%;
+		order: 3;
+	}
+
+	.review__form fieldset:nth-child(2) h3,
+	.review__form fieldset:nth-child(4) h3,
+	.review__form fieldset:nth-child(5) h3{
+		display: flex;
+		align-items: center;
+	}
+
+	.review__form fieldset:nth-child(2) h3::after,
+	.review__form fieldset:nth-child(2) h3::before,
+	.review__form fieldset:nth-child(4) h3::after,
+	.review__form fieldset:nth-child(4) h3::before,
+	.review__form fieldset:nth-child(5) h3::after,
+	.review__form fieldset:nth-child(5) h3::before{
+		content: "";
+		flex-grow: 1;
+		flex-shrink: 0;
+		width: 160px;
+		height: 1px;
+		background-color: #dbdbdb;		
+	}
+
+	.review__form fieldset:nth-child(2) h3::before,
+	.review__form fieldset:nth-child(4) h3::before,
+	.review__form fieldset:nth-child(5) h3::before {
+		margin-right: 30px
+	}
+
+	.review__form fieldset:nth-child(2) h3::after,
+	.review__form fieldset:nth-child(4) h3::after,
+	.review__form fieldset:nth-child(5) h3::after {
+		margin-left: 30px;
+	}
+
+	.review__form fieldset:nth-child(4) ul {
+		display: flex;
+		flex-wrap: wrap;
+		width: 500px;
+		margin: 30px auto;
+	}
+
+	.review__form fieldset:nth-child(4) ul li{
+		width: 250px;
+	}
+
+	.review__form fieldset:nth-child(5) {
+		width: 100%;
+		order: 5;
+	}
+
+	.review__form textarea {
+		width: 100%;
+	}
+
+	.review__form button {
+		width: 325px;
+		order: 6;
+	}
+
+	.review__form p:last-of-type {
+		display: block;
+		margin-left: auto;
+		text-align: right;
+		line-height: 26px;
+		order: 7;
+	}
+}
+
