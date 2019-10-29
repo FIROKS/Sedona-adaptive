@@ -146,10 +146,17 @@
 							<button type="submit">Отправить отзыв</button>
 							<p>* — обязательные поля</p>
 						</form>
-						<div class="review__modal-success">
+						<div class="review__modal-success ">
 							<div class="review__modal-cont">
 								<p class="title">Ваш отзыв отправлен!</p>
-								<p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+								<p class="review__modal-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+								<button class="button" type="button">Закрыть окно</button>
+							</div>
+						</div>
+						<div class="review__modal-failed review__modal-failed--show">
+							<div class="review__modal-cont">
+								<p class="title">Что-то пошло не так!</p>
+								<p class="review__modal-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
 								<button class="button" type="button">Закрыть окно</button>
 							</div>
 						</div>
