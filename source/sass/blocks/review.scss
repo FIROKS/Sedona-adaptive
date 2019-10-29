@@ -233,6 +233,11 @@
 	display: none;
 }
 
+.review__form input::placeholder,
+.review__form textarea::placeholder {
+	color: #000000;
+}
+
 @media (min-width: $tablet-width) {
 	.review__form form {
 		display: flex;
@@ -334,7 +339,7 @@
 		margin: 30px auto;
 	}
 
-	.review__form fieldset:nth-child(4) ul li{
+	.review__form fieldset:nth-child(4) li{
 		width: 250px;
 	}
 
@@ -358,6 +363,30 @@
 		text-align: right;
 		line-height: 26px;
 		order: 7;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.review__form fieldset:nth-child(3) h3{
+		padding-left: 70px;
+	}
+	
+	.review__form fieldset:nth-child(4) h3::after,
+	.review__form fieldset:nth-child(4) h3::before {
+		width: 280px;
+	}
+
+	.review__form fieldset:nth-child(4) ul{
+		width: 100%;
+		justify-content: space-between;		
+	}
+
+	.review__form fieldset:nth-child(4) li{
+		width: 200px;		
+	}
+
+	.review__form button {
+		width: 480px;
 	}
 }
 
