@@ -97,3 +97,16 @@
 		margin-left: 30px;
 	}
 }
+
+@media (min-width: $desktop-width) {
+	.player__img {
+		width: 800px;
+	}
+
+	.player__controls {		
+		right: 0;
+		left: 0;
+		width: 800px;
+		margin: 0 auto;
+	}
+}
